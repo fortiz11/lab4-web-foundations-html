@@ -1,42 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href=" https://www.sandiego.edu/">
+    <title>Exploring HTML Elements</title>
 
-<title>Exploring HTML Elements</title>
-</head>
-<body>
-  <h1>Welcome to my first HTML page!!!</h1>
- 
+  </head>
+  <body>
+    <h1>Welcome to my first HTML page!!!</h1>
 
-  <p> This is a link to 
-    <a href="https://www.southeastautoshowroom.com/imagetag/1808/2/l/Used-2023-BMW-M4-Competition-1737561875.jpg" target ="_blank" > my dream car </a>.
-  </p>
+    <p>
+      This is a link to
+      <a
+        href="https://www.southeastautoshowroom.com/imagetag/1808/2/l/Used-2023-BMW-M4-Competition-1737561875.jpg"
+        target="_blank"
+      >
+        my dream car </a
+      >.
+    </p>
 
-  <p> When you first learn math the concept of <abbr title="Parenthesis,Exponent,Mutplication/Division, Addition/Subtraction"> PEMDAS</abbr> is vital </p>
-  
+    <p>
+      When you first learn math the concept of
+      <abbr
+        title="Parenthesis,Exponent,Mutplication/Division, Addition/Subtraction"
+      >
+        PEMDAS</abbr
+      >
+      is vital
+    </p>
 
-  <p> If you desire to contact the author please refer to the following email: </p>
+    <p>
+      If you desire to contact the author please refer to the following email:
+    </p>
 
-  <address>
-    <a href="mailto:francisortiz2012@yahoo.com"> francisortiz2012@yahoo.com</a>
-  </address>
-  <!-- Exploring HTML Elements -->
-  <!-- The alt in image and area is in case the image and area doesnt load then it has a alternate way to display it -->
-<figure>
-  <img src=" https://i.etsystatic.com/13367763/r/il/1f9834/1191264522/il_570xN.1191264522_7gos.jpg"
-  alt = "click here"
-  usemap="#Canelo-poster" width="500", height=" 300">
-  <map name="Canelo-poster">
-    <area shape ="circle" coords="200,100,50"
-    href="https://store.caneloteam.com/"
-    alt="Click for merch">
-  </map>
-    <figcaption>Nasty knock out!</figcaption>
+    <address>
+      <a href="mailto:francisortiz2012@yahoo.com">
+        francisortiz2012@yahoo.com</a
+      >
+    </address>
+    <!-- Exploring HTML Elements -->
+    <!-- The alt in image and area is in case the image and area doesn't load then it has a alternate way to display it -->
+    <!--Using base doesn't affect URLs that have http or https in front but affects all other URLs-->
+    <figure>
+      <img
+        src=" https://i.etsystatic.com/13367763/r/il/1f9834/1191264522/il_570xN.1191264522_7gos.jpg"
+        alt="click here"
+        usemap="#Canelo-poster"
+        width="500"
+        ,
+        height=" 300"
+      />
+      <map name="Canelo-poster">
+        <area
+          shape="circle"
+          coords="200,100,50"
+          href="https://store.caneloteam.com/"
+          alt="Click for merch"
+        />
+      </map>
+      <figcaption>Nasty knock out!</figcaption>
+    </figure>
 
-</figure>
+    <article>
+      <h2>My Career Goals</h2>
+      <p>
+        Having been exposed to Computer Science for 2 years and having completed
+        an internship this summer. I have a better idea of where I want to take
+        my career to go and I seem to enjoy networking and security. So I will
+        be hoping to get an internship in that field this summer.
+      </p>
+      <aside>
+        <h3>internship Experience</h3>
+        <p>
+          My internship this summer was as a <b>Network Engineer</b> with General
+          Dynamics in San Diego. I got to learn and play around with systems
+          severs, switches, firewalls etc.
+        </p>
+      </aside>
+    </article>
+    <style>
+      aside {
+        background-color: #f0f0f0; /* light gray background */
+        border-left: 4px solid #007acc; /* blue accent bar */
+        padding: 1rem;
+        margin: 1rem 0;
+        font-style: italic;
+      }
 
-
-</body>
+    </style>
+  <h2>All time favorite song! Take a listen. </h2>
+    <audio controls>
+       
+      <source src="Impala.mp3" type="audio/mpeg">
+    </audio>
+  </body>
 </html>
