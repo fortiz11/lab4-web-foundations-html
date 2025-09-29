@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <base href=" https://www.sandiego.edu/" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href=" https://www.sandiego.edu/" />
     <title>Exploring HTML Elements</title>
-    <link rel="alternate" hreflang="es" href="index-es.html">
+    <link rel="alternate" hreflang="es" href="index-es.html" />
     <style>
       aside {
         background-color: #f0f0f0; /* light gray background */
@@ -17,30 +17,31 @@
     </style>
   </head>
   <body>
-    <header>  <h1>Welcome to my first HTML page!!!</h1>
+    <header>
+      <h1>Welcome to my first HTML page!!!</h1>
       <hr />
-    <time>Date: 09.28.2025</time></header>
+      <time datetime="2025-09-28">Date: Sept 28, 2025</time>
+    </header>
     <script>
       document.write("<p>JavaScript is enabled </p>");
     </script>
-    
+
     <noscript>
-      <p>JavaScript is disabled ❌ — please enable it for full functionality.</p>
+      <p>
+        JavaScript is disabled ❌ — please enable it for full functionality.
+      </p>
     </noscript>
-    
-    
 
+    <nav>
+      <menu>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </menu>
+    </nav>
+    <p>Homework Completion:</p>
+    <progress value="4" max="10">40%</progress>
     
-<nav>
-  <menu>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </menu>
-</nav>
-  
-
-
     <p>
       This is a link to
       <a
@@ -80,57 +81,55 @@
         usemap="#Canelo-poster"
         width="500"
         height="300"
-      >
+      />
       <map name="Canelo-poster">
         <area
           shape="circle"
           coords="200,100,50"
           href="https://store.caneloteam.com/"
           alt="Click for merch"
-        >
+        />
       </map>
       <figcaption>Nasty knock out!</figcaption>
     </figure>
 
     <h1>Watch the knockout here!</h1>
-    <iframe width="560" height="315"
-    src="https://youtu.be/LehQX1bbGQk"
-    title="KO"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/LehQX1bbGQk"
+      title="KO"
+      allowfullscreen
+    >
+    </iframe>
 
-  
-  
+    <h2>To make my favorite food you need</h2>
+    <ul>
+      <li>Pasta</li>
+      <li>Heavy cream</li>
+      <li>Tomato paste</li>
+      <li>Onions</li>
+    </ul>
 
-  <h2>To make my favorite food you need</h2>
-  <ul>
-    <li>Pasta</li>
-    <li>Heavy cream</li>
-    <li>Tomato paste</li>
-    <li>Onions</li>
-  </ul>
-
-  <h2>To prepare it: </h2>
-  <ol>
-    <li> saute onions</li>
-    <li>add the tomato paste</li>
-    <li>add heavy cream</li>
-    <li>add cooked pasta and enjoy!</li>
-  </ol>
+    <h2>To prepare it:</h2>
+    <ol>
+      <li>saute onions</li>
+      <li>add the tomato paste</li>
+      <li>add heavy cream</li>
+      <li>add cooked pasta and enjoy!</li>
+    </ol>
 
     <article>
       <hgroup>
-      <h2>My Career Goals</h2>
-      <p>
-        AKA what I want to be when i grow up
-      </p>
+        <h2>My Career Goals</h2>
+        <p>AKA what I want to be when i grow up</p>
       </hgroup>
       <p>
-        Having been exposed to <ins>Computer Science</ins> for 2 years and having completed
-        an internship this summer. I have a better idea of where I want to take
-        my career to go and I seem to enjoy networking and <em>security.</em> So I will
-        be hoping to get an internship in that field this summer.
+        Having been exposed to <ins>Computer Science</ins> for 2 years and
+        having completed an internship this summer. I have a better idea of
+        where I want to take my career to go and I seem to enjoy networking and
+        <em>security.</em> So I will be hoping to get an internship in that
+        field this summer.
       </p>
       <aside>
         <h3>internship Experience</h3>
@@ -141,48 +140,86 @@
         </p>
       </aside>
     </article>
-   
+
     <h2>All time favorite song! Take a listen.</h2>
     <audio controls>
-      <source src="Impala.mp3" type="audio/mpeg">
+      <source src="Impala.mp3" type="audio/mpeg" />
     </audio>
     <section id="quotes-section">
       <div class="Quotes">
-      <h2> Famous Quotes</h2>
-      <blockquote cite="https://sportstrata.com/quotes/">
-      <main>
-        <p>Champions aren't made in the gyms. Champions are made from something they have deep inside them <br>- a desire, a dream, a vision
-        </p>
-    </blockquote>
-  </main>
-    <p>-Muhammad Ali, <cite> SportStrata</cite></p>
-  </div>
+        <section>
+          <h2>Picture Tag Demo</h2>
+          <p>Resize the window to see different images load:</p>
+
+          <picture>
+            <source
+              media="(min-width: 800px)"
+              srcset="https://via.placeholder.com/800x400"
+            />
+
+            <source
+              media="(min-width: 400px)"
+              srcset="https://via.placeholder.com/400x200"
+            />
+
+            <img
+              src="https://via.placeholder.com/200x100"
+              alt="Responsive placeholder image"
+            />
+          </picture>
+        </section>
+
+        <h2>Famous Quotes</h2>
+        <blockquote cite="https://sportstrata.com/quotes/">
+          <p>
+            Champions aren't made in the gyms. Champions are made from something
+            they have deep inside them <br />- a desire, a dream, a vision
+          </p>
+        </blockquote>
+
+        <p>-Muhammad Ali, <cite> SportStrata</cite></p>
+
+        <p>Albert Einstein once said, <q>Imagination is more important than knowledge.</q></p>
+
+      </div>
     </section>
-  
-<button type="button"> That was Easy!</button>
 
+    <button type="button">Click for more!</button>
 
-<h2>Here is an example of a table that keeps track of <del>the</del> <ins>all</ins> student grades</h2>
-<table>
-  <caption><br>StudentGrades</caption>
-  <thead>
-    <tr>
-      <th>Name</th><th>Grade</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Alice</td><td>A</td></tr>
-    <tr><td>Bob</td><td>B</td></tr>
-  </tbody>
-</table>
-<p>Average score: 
-  <meter min="0" max="100" value="85" low="50" high="80" optimum="100">
-    85 out of 100
-  </meter>
-</p>
+    <h2>
+      Here is an example of a table that keeps track of <del>the</del>
+      <ins>all</ins> student grades
+    </h2>
+    <table>
+      <caption>
+        <br />StudentGrades
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>B</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Average score:
+      <meter min="0" max="100" value="85" low="50" high="80" optimum="100">
+        85 out of 100
+      </meter>
+    </p>
 
-<h2>Look at this fun little function </h2>
-<pre>
+    <h2>Look at this fun little function</h2>
+    <pre>
   <code>
     function greet(name){
       console.log("Hello" + name);
@@ -190,85 +227,91 @@
   </code>
 </pre>
 
-<h2>What course am I doing this for? </h2>
-<h3>Here's the answer:</h3>
-<p>Course: <data value="COMP-370">Automata, Computability, and Languages</data></p>
-<label for="browser">Choose your browser:</label>
-<input list="browsers" id="browser" name="browser">
+    <h2>What course am I doing this for?</h2>
+    <h3>Here's the answer:</h3>
+    <p>
+      Course:
+      <data value="COMP-370">Automata, Computability, and Languages</data>
+    </p>
+    <label for="browser">Choose your browser:</label>
+    <input list="browsers" id="browser" name="browser" />
 
-<datalist id="browsers">
-  <optgroup label="'browser">
-  <option value="Firefox">
-  <option value="Safari">
-  <option value="Edge">
-  </optgroup>
-</datalist>
+    <datalist id="browsers">
+      <option value="Firefox"></option>
+      <option value="Safari"></option>
+      <option value="Edge"></option>
+    </datalist>
 
-<dl>
-  <dt>HTML=</dt>
-  <dd>HyperText Markup Language </dd>
+    <dl>
+      <dt>HTML=</dt>
+      <dd>HyperText Markup Language</dd>
 
-  <dt>CSS=</dt>
-  <dd> Cascading Style Sheets</dd>
-</dl>
+      <dt>CSS=</dt>
+      <dd>Cascading Style Sheets</dd>
+    </dl>
 
-<details>
+    <details>
+      <summary>This is my drop down box</summary>
+      This is the <i>super secret info</i>
+    </details>
 
+    <h1>The definition of Software Engineering?</h1>
+    <p>
+      <dfn id="def-Software-Engineering">Software Engineering</dfn>
+      is the process of designing, developing, testing, and maintaining
+      software.
+    </p>
 
-  <summary>This is my drop down box</summary>
-  This is the <i>super secret info</i>
-</details>
+    <dialog open>
+      <h2>Hello friends!</h2>
+      <p>This is a sample dialog box.</p>
 
-<h1>The definition of Software Engineering?</h1>
-<p>
-  <dfn id="def-Software-Engineering">Software Engineering</dfn>
-  is the process of designing, developing, testing, and maintaining software.
-</p>
+      <form>
+        <fieldset>
+          <legend>Whats your favorite programming language?</legend>
+          <input type="radio" id="Lang-python" name="Language" value="python" />
+          <label for="Lang-python">Python</label><br />
 
-<dialog open>
-  <h2>Hello friends!</h2>
-  <p>This is a sample dialog box.</p>
+          <input type="radio" id="Lang-java" name="Language" value="'java" />
+          <label for="Lang-java">Java</label><br />
 
-<form>
-  <fieldset>
-    <legend>Whats your favorite programming language?</legend>
-    <input type="radio" id="Lang-python"
-    name="Language" value="python">
-    <label for="Lang-python">Python</label><br>
+          <input type="radio" id="Lang-C" name="Language" value="C" />
+          <label for="Lang-C">C</label><br />
+        </fieldset>
+      </form>
+    </dialog>
 
-    <input type="radio" id="Lang-java"
-    name="Language" value="'java">
-    <label for="Lang-java">Java</label><br>
+    <p>To copy this definition, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+    <p>On a Mac, press <kbd>Command</kbd> + <kbd>C</kbd>.</p>
 
-    <input type="radio" id="Lang-C"
-    name="Language" value="C">
-    <label for="Lang-C">C</label><br>
+    <section>
+      <h2>Output Example</h2>
+      <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <label for="a">Number A:</label>
+        <input type="number" id="a" name="a" value="5" />
 
+        <label for="b">Number B:</label>
+        <input type="number" id="b" name="b" value="10" />
 
-  </fieldset>
-  
-</form>
-</dialog>
+        <p>Sum: <output name="result" for="a b">15</output></p>
+      </form>
+    </section>
 
-<p>To copy this definition, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
-<p>On a Mac, press <kbd>Command</kbd> + <kbd>C</kbd>.</p>
+    <section>
+      <h2>Ruby Annotation Example</h2>
+      <p>
+        Here's a Japanese word with pronunciation:  
+        <ruby>
+          漢 <rp>(</rp><rt>kan</rt><rp>)</rp>
+          字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+        </ruby>
+      </p>
+    </section>
+    
 
-
-<section>
-  <h2>Output Example</h2>
-  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-    <label for="a">Number A:</label>
-    <input type="number" id="a" name="a" value="5">
-
-    <label for="b">Number B:</label>
-    <input type="number" id="b" name="b" value="10">
-
-    <p>Sum: <output name="result" for="a b">15</output></p>
-  </form>
-</section>
-
-
-
-<footer>
-  <p> @2025 Francis Ortiz</p>
-  <footer>
+    <footer>
+      <p>@2025 Francis Ortiz</p>
+      <p>Last updated Sept 29</p>
+    </footer>
+  </body>
+</html>
