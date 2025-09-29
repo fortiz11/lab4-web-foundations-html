@@ -20,7 +20,26 @@
     <header>  <h1>Welcome to my first HTML page!!!</h1>
       <hr />
     <time>Date: 09.28.2025</time></header>
+    <script>
+      document.write("<p>JavaScript is enabled </p>");
+    </script>
+    
+    <noscript>
+      <p>JavaScript is disabled ❌ — please enable it for full functionality.</p>
+    </noscript>
+    
+    
+
+    
+<nav>
+  <menu>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </menu>
+</nav>
   
+
 
     <p>
       This is a link to
@@ -80,6 +99,9 @@
     frameborder="0"
     allowfullscreen>
   </iframe>
+
+  
+  
 
   <h2>To make my favorite food you need</h2>
   <ul>
@@ -153,6 +175,12 @@
     <tr><td>Bob</td><td>B</td></tr>
   </tbody>
 </table>
+<p>Average score: 
+  <meter min="0" max="100" value="85" low="50" high="80" optimum="100">
+    85 out of 100
+  </meter>
+</p>
+
 <h2>Look at this fun little function </h2>
 <pre>
   <code>
@@ -169,10 +197,11 @@
 <input list="browsers" id="browser" name="browser">
 
 <datalist id="browsers">
-  <option value="Chrome">
+  <optgroup label="'browser">
   <option value="Firefox">
   <option value="Safari">
   <option value="Edge">
+  </optgroup>
 </datalist>
 
 <dl>
@@ -223,6 +252,21 @@
 
 <p>To copy this definition, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
 <p>On a Mac, press <kbd>Command</kbd> + <kbd>C</kbd>.</p>
+
+
+<section>
+  <h2>Output Example</h2>
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <label for="a">Number A:</label>
+    <input type="number" id="a" name="a" value="5">
+
+    <label for="b">Number B:</label>
+    <input type="number" id="b" name="b" value="10">
+
+    <p>Sum: <output name="result" for="a b">15</output></p>
+  </form>
+</section>
+
 
 
 <footer>
