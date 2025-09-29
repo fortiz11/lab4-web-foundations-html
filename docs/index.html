@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <base href=" https://www.sandiego.edu/" >
     <title>Exploring HTML Elements</title>
+    <link rel="alternate" hreflang="es" href="index-es.html">
     <style>
       aside {
         background-color: #f0f0f0; /* light gray background */
@@ -36,7 +37,7 @@
       <abbr
         title="Parenthesis,Exponent,Mutplication/Division, Addition/Subtraction"
       >
-        PEMDAS</abbr
+        <mark>PEMDAS</mark></abbr
       >
       is vital
     </p>
@@ -72,7 +73,29 @@
       <figcaption>Nasty knock out!</figcaption>
     </figure>
 
-  
+    <h1>Watch the knockout here!</h1>
+    <iframe width="560" height="315"
+    src="https://youtu.be/LehQX1bbGQk"
+    title="KO"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+
+  <h2>To make my favorite food you need</h2>
+  <ul>
+    <li>Pasta</li>
+    <li>Heavy cream</li>
+    <li>Tomato paste</li>
+    <li>Onions</li>
+  </ul>
+
+  <h2>To prepare it: </h2>
+  <ol>
+    <li> saute onions</li>
+    <li>add the tomato paste</li>
+    <li>add heavy cream</li>
+    <li>add cooked pasta and enjoy!</li>
+  </ol>
 
     <article>
       <hgroup>
@@ -105,9 +128,11 @@
       <div class="Quotes">
       <h2> Famous Quotes</h2>
       <blockquote cite="https://sportstrata.com/quotes/">
+      <main>
         <p>Champions aren't made in the gyms. Champions are made from something they have deep inside them <br>- a desire, a dream, a vision
         </p>
     </blockquote>
+  </main>
     <p>-Muhammad Ali, <cite> SportStrata</cite></p>
   </div>
     </section>
@@ -115,7 +140,7 @@
 <button type="button"> That was Easy!</button>
 
 
-<h2>Here is an example of a table that keeps track of <del>the</del> student grades</h2>
+<h2>Here is an example of a table that keeps track of <del>the</del> <ins>all</ins> student grades</h2>
 <table>
   <caption><br>StudentGrades</caption>
   <thead>
@@ -157,7 +182,10 @@
   <dt>CSS=</dt>
   <dd> Cascading Style Sheets</dd>
 </dl>
+
 <details>
+
+
   <summary>This is my drop down box</summary>
   This is the <i>super secret info</i>
 </details>
@@ -189,8 +217,12 @@
 
 
   </fieldset>
+  
 </form>
 </dialog>
+
+<p>To copy this definition, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+<p>On a Mac, press <kbd>Command</kbd> + <kbd>C</kbd>.</p>
 
 
 <footer>
