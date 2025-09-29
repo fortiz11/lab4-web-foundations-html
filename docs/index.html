@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href=" https://www.sandiego.edu/" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <base href=" https://www.sandiego.edu/" >
     <title>Exploring HTML Elements</title>
+    <style>
+      aside {
+        background-color: #f0f0f0; /* light gray background */
+        border-left: 4px solid #007acc; /* blue accent bar */
+        padding: 1rem;
+        margin: 1rem 0;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <h1>Welcome to my first HTML page!!!</h1>
@@ -43,20 +52,19 @@
     <!--Using base doesn't affect URLs that have http or https in front but affects all other URLs-->
     <figure>
       <img
-        src=" https://i.etsystatic.com/13367763/r/il/1f9834/1191264522/il_570xN.1191264522_7gos.jpg"
+        src="https://i.etsystatic.com/13367763/r/il/1f9834/1191264522/il_570xN.1191264522_7gos.jpg"
         alt="click here"
         usemap="#Canelo-poster"
         width="500"
-        ,
-        height=" 300"
-      />
+        height="300"
+      >
       <map name="Canelo-poster">
         <area
           shape="circle"
           coords="200,100,50"
           href="https://store.caneloteam.com/"
           alt="Click for merch"
-        />
+        >
       </map>
       <figcaption>Nasty knock out!</figcaption>
     </figure>
@@ -64,9 +72,9 @@
     <article>
       <h2>My Career Goals</h2>
       <p>
-        Having been exposed to Computer Science for 2 years and having completed
+        Having been exposed to <ins>Computer Science</ins> for 2 years and having completed
         an internship this summer. I have a better idea of where I want to take
-        my career to go and I seem to enjoy networking and security. So I will
+        my career to go and I seem to enjoy networking and <em>security.</em> So I will
         be hoping to get an internship in that field this summer.
       </p>
       <aside>
@@ -78,20 +86,12 @@
         </p>
       </aside>
     </article>
-    <style>
-      aside {
-        background-color: #f0f0f0; /* light gray background */
-        border-left: 4px solid #007acc; /* blue accent bar */
-        padding: 1rem;
-        margin: 1rem 0;
-        font-style: italic;
-      }
-    </style>
+   
     <h2>All time favorite song! Take a listen.</h2>
     <audio controls>
       <source src="Impala.mp3" type="audio/mpeg">
     </audio>
-    <section>
+    <section id="quotes-section">
       <div class="Quotes">
       <h2> Famous Quotes</h2>
       <blockquote cite="https://sportstrata.com/quotes/">
@@ -99,12 +99,13 @@
         </p>
     </blockquote>
     <p>-Muhammad Ali, <cite> SportStrata</cite></p>
-    </section>
   </div>
+    </section>
+  
 <button type="button"> That was Easy!</button>
 
-</style>
-<h2>Here is an example of a table that keeps track of student grades</h2>
+
+<h2>Here is an example of a table that keeps track of <del>the</del> student grades</h2>
 <table>
   <caption><br>StudentGrades</caption>
   <thead>
@@ -117,5 +118,69 @@
     <tr><td>Bob</td><td>B</td></tr>
   </tbody>
 </table>
+<h2>Look at this fun little function </h2>
+<pre>
+  <code>
+    function greet(name){
+      console.log("Hello" + name);
+    }
+  </code>
+</pre>
+
+<h2>What course am I doing this for? </h2>
+<h3>Here's the answer:</h3>
+<p>Course: <data value="COMP-370">Automata, Computability, and Languages</data></p>
+<label for="browser">Choose your browser:</label>
+<input list="browsers" id="browser" name="browser">
+
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Safari">
+  <option value="Edge">
+</datalist>
+
+<dl>
+  <dt>HTML=</dt>
+  <dd>HyperText Markup Language </dd>
+
+  <dt>CSS=</dt>
+  <dd> Cascading Style Sheets</dd>
+</dl>
+<details>
+  <summary>This is my drop down box</summary>
+  This is the super secret info
+</details>
+
+<h1>The definition of Software Engineering?</h1>
+<p>
+  <dfn id="def-Software-Engineering">Software Engineering</dfn>
+  is the process of designing, developing, testing, and maintaining software.
+</p>
+
+<dialog open>
+  <h2>Hello friends!</h2>
+  <p>This is a sample dialog box.</p>
+
+<form>
+  <fieldset>
+    <legend>Whats your favorite programming language?</legend>
+    <input type="radio" id="Lang-python"
+    name="Language" value="python">
+    <label for="Lang-python">Python</label><br>
+
+    <input type="radio" id="Lang-java"
+    name="Language" value="'java">
+    <label for="Lang-java">Java</label><br>
+
+    <input type="radio" id="Lang-C"
+    name="Language" value="C">
+    <label for="Lang-C">C</label><br>
+
+
+  </fieldset>
+</form>
+</dialog>
+
   </body>
 </html>
