@@ -41,6 +41,14 @@
     </nav>
     <p>Homework Completion:</p>
     <progress value="4" max="10">40%</progress>
+
+    <search>
+      <form action="/search">
+        <label for="page-search">Search this page:</label>
+        <input type="search" id="page-search" name="q" placeholder="Search…">
+        <button type="submit">Go</button>
+      </form>
+    </search>
     
     <p>
       This is a link to
@@ -90,7 +98,7 @@
           alt="Click for merch"
         />
       </map>
-      <figcaption>Nasty knock out!</figcaption>
+      <figcaption><strong>Nasty knock out!</strong></figcaption>
     </figure>
 
     <h1>Watch the knockout here!</h1>
@@ -102,6 +110,25 @@
       allowfullscreen
     >
     </iframe>
+
+    <section>
+      <h2>Favorite Food Selector</h2>
+      <form>
+        <label for="food">Pick a food:</label>
+        <select id="food" name="favFood">
+          <optgroup label="Fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+          </optgroup>
+          <optgroup label="Desserts">
+            <option value="icecream">Ice Cream</option>
+            <option value="cake">Cake</option>
+          </optgroup>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
 
     <h2>To make my favorite food you need</h2>
     <ul>
@@ -136,7 +163,7 @@
         <p>
           My internship this summer was as a <b>Network Engineer</b> with
           General Dynamics in San Diego. I got to learn and play around with
-          systems severs, switches, firewalls etc.
+          systems severs, switches, <small>firewalls etc.</small>
         </p>
       </aside>
     </article>
@@ -227,6 +254,12 @@
   </code>
 </pre>
 
+<section>
+  <h2>Sample Output Example</h2>
+  <p>Here's what the program prints:</p>
+  <p><samp>Hello, Francis!</samp></p>
+</section>
+
     <h2>What course am I doing this for?</h2>
     <h3>Here's the answer:</h3>
     <p>
@@ -242,6 +275,12 @@
       <option value="Edge"></option>
     </datalist>
 
+    <p>
+      I love <span style="color: red;">HTML</span> and 
+      <span style="color: blue;">CSS</span>!
+    </p>
+    
+
     <dl>
       <dt>HTML=</dt>
       <dd>HyperText Markup Language</dd>
@@ -254,7 +293,11 @@
       <summary>This is my drop down box</summary>
       This is the <i>super secret info</i>
     </details>
-
+    <section>
+      
+     
+    </section>
+    
     <h1>The definition of Software Engineering?</h1>
     <p>
       <dfn id="def-Software-Engineering">Software Engineering</dfn>
@@ -281,7 +324,7 @@
       </form>
     </dialog>
 
-    <p>To copy this definition, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+    <p><s>To copy this definition, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</s></p>
     <p>On a Mac, press <kbd>Command</kbd> + <kbd>C</kbd>.</p>
 
     <section>
